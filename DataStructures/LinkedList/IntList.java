@@ -1,4 +1,4 @@
-package IntList;
+package DataStructures.LinkedList;
 
 public class IntList{
 

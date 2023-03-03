@@ -1,4 +1,4 @@
-package IntList;
+package DataStructures.LinkedList;
 
 public class IntListTester { //break up testers into tests into individual functions
 
