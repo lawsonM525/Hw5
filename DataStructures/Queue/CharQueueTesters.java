@@ -1,5 +1,3 @@
-package DataStructures.Queue;
-
 public class CharQueueTesters {
     
     public static void testIsFull() {

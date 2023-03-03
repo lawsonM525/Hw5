@@ -1,5 +1,3 @@
-package DataSructures.LinkedList;
-
 public class Node {
     //make class variables private and implement getters and setters
     Node next;

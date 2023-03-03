@@ -1,5 +1,3 @@
-package DataStructures.Queue;
-
 public class CharQueue{
     private int maxSize; // maximum size of the queue
     private char[] queue; // array to store elements of the queue

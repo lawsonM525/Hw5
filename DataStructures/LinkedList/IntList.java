@@ -1,5 +1,3 @@
-package DataStructures.LinkedList;
-
 public class IntList{
 
     Node head;

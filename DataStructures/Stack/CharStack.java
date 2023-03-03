@@ -1,5 +1,3 @@
-package DataStructures.Stack;
-
 public class CharStack {
     // CLASS DEFINES A STACK OF CHARACTERS
 
