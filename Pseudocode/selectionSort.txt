@@ -1,0 +1,19 @@
+Input: unsorted int[] arr
+Output: modified arr
+
+Method:
+#iteratively selects smallest and swapsk for a sorted array
+selection_sort(arr):
+    n = length(arr)
+    # loop through array from start to end
+    for i from 0 to n-1:
+        min_index = i
+        # loop through subarray to find index of the smallest element
+        for j from i+1 to n-1:
+            if arr[j] < arr[min_index]:
+                min_index = j
+        # if the current minimum is not at index i, swap the elements
+        if min_index != i:
+            swap (Arr, i, min_index) 
+            #calls swap functions that swaps the elements in the specified indices in the specified array
+    return arr
