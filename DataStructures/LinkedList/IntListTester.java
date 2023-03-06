@@ -36,6 +36,24 @@ public class IntListTester { //break up testers into tests into individual funct
         list.prepend(4);
         System.out.println("String Result: \"" + list.toString() + "\"");
     }
+
+    public static void testSelectionSort() {
+        System.out.println("==== Test selectionSortLinkedList() ====");
+        
+        // Create an unsorted linked list
+        IntList list = new IntList();
+        list.append(3);
+        list.prepend(6);
+        list.append(1);
+        list.prepend(4);
+        list.append(2);
+        System.out.println("Unsorted List: " + list.toString());
+        
+        // Sort the linked list
+        list.selectionSort();
+        System.out.println("Sorted List: " + list.toString());
+    }
+    
     
     public static void testDeleteWithValue() {
         System.out.println(" ===== TESTING DELETEWITHVALUE =====");
@@ -64,6 +82,8 @@ public class IntListTester { //break up testers into tests into individual funct
         testPrepend();
         System.out.println("");
         testDeleteWithValue();
+        System.out.println("");
+        testSelectionSort();
         System.out.println("");
         System.out.println("===== PROGRAM ENDED =====");
     }

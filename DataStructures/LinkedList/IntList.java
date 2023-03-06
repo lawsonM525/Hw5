@@ -141,6 +141,11 @@ public class IntList{
         selectionSort(head.next);
     }
 
+    //Wrapper for selection sort
+    public void selectionSort(){
+        selectionSort(head);
+    }
+
 
     public static void swap(Node a, Node b) {
         int temp = a.data;
