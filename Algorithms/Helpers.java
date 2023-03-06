@@ -16,4 +16,16 @@ public class Helpers {
         }
         System.out.println("]");
     }
+
+    /**
+     * swaps two elements in an array
+     * @param arr
+     * @param i index of first element to be swapped
+     * @param j index of second element to be swapped
+     */
+    public static void swap(int[] arr, int i, int j) {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
 }
