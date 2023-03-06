@@ -264,4 +264,30 @@ public class ArrayAlgorithms {
         }
     }
 
+    /**
+     * sorts an array by iteratively searching for the smallest element and swapping it
+     * @param array to be sorted
+     */
+    public static int[] selectionSort(int[] arr, int start, int end) {
+        if (start >= end) {
+            return arr;
+        } else {
+            // Find the index of the minimum element in the subarray arr[start..end]
+            int minIndex = start;
+            for (int i = start + 1; i <= end; i++) {
+                if (arr[i] < arr[minIndex]) {
+                    minIndex = i;
+                }
+            }
+            // Swap the minimum element with the first element in the subarray if necessary
+            if (minIndex != start) {
+                Helpers.swap(arr, start, minIndex);
+            }
+            // Recursively sort the subarray from index start+1 to end
+            selectionSort(arr, start + 1, end);
+            // Return the sorted array
+            return arr;
+        }
+    }
+
 }
