@@ -266,7 +266,9 @@ public class ArrayAlgorithms {
 
     /**
      * sorts an array by iteratively searching for the smallest element and swapping it
-     * @param array to be sorted
+     * @param arr array to be sorted
+     * @param start 
+     * @param end
      */
     public static int[] selectionSort(int[] arr, int start, int end) {
         if (start >= end) {
@@ -288,6 +290,13 @@ public class ArrayAlgorithms {
             // Return the sorted array
             return arr;
         }
+    }
+
+    /**
+     * Wrapper for selectionSort function
+     */
+    public static int[] selectionSortW(int[] arr){
+        return selectionSort(arr, 0, arr.length -1);
     }
 
 }

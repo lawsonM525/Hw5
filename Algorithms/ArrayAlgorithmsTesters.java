@@ -153,6 +153,20 @@ public class ArrayAlgorithmsTesters {
         System.out.println("Index of 6: " + ArrayAlgorithms.binarySearch(array, 6, 0, array.length-1));
     }
 
+    /**
+     * Tests selectionSort wrapper
+     */
+    public static void testSelectionSortW() {
+        int[] array = {3, 1, 4, 2, 5};
+        System.out.println("==== Test selectionSort() ====");
+        System.out.println("Original array: ");
+        Helpers.printArray(array);
+        int[] sortedArray = ArrayAlgorithms.selectionSortW(array);
+        System.out.println("Sorted array: ");
+        Helpers.printArray(sortedArray);
+    }
+
+
     // Main method
     public static void main(String[] args) {
         testAddAll();
@@ -168,5 +182,6 @@ public class ArrayAlgorithmsTesters {
         testReverse();
         testReverseRec();
         testBinarySearch();
+        testSelectionSortW();
     }
 }
